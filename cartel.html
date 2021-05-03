@@ -5,7 +5,7 @@
     <title>CINE+</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cartel.css">
     <!-- libreria para iconos basicos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- fuentes de google -->
@@ -20,10 +20,10 @@
         </div>
         <ul>
             <li><a href="#" class="activo">Inicio</a></li>
-            <li><a href="#">Series</a></li>
-            <li><a href="#">Peliculas</a></li>
-            <li><a href="#">Soundtracks</a></li>
-            <li><a href="#">Descargas</a></li>
+            <li><a href="#movie">Películas</a></li>
+            <li><a href="#serie">series</a></li>
+            <li><a href="#sound">Soundtracks</a></li>
+            <li><a href="#download">Descargas</a></li>
             <label for="chk1" class="menu-close">
                 <i class="fa fa-times" aria-hidden="true"></i>
             </label>
@@ -31,7 +31,7 @@
         <div class="search">
             <input type="text" name="search" id="srch"
             placeholder="Busca tu pelicula o serie">
-            <button type="submit">Search</button>
+            <button type="submit">buscar</button>
         </div>
         <label for="chk1" class="menu-open">
             <i class="fa fa-bars" aria-hidden="true"></i>
@@ -40,9 +40,9 @@
     <section>
         <div class="container">
             <div class="slides">
-                <img src="img/img1.jpg" alt="Gumball">
+                <img src="images/ojoport.jpg" alt="">
                 <div class="content">
-                    <h2>Gumball</h2>
+                    <h2>origenes</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dicta amet nihil eligendi officiis doloribus placeat mollitia. Aperiam maiores esse delectus maxime fugiat dolorem explicabo, culpa pariatur impedit ullam saepe.</p>
                     <a href="#">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -51,9 +51,9 @@
                 </div>
             </div>
             <div class="slides">
-                <img src="img/img2.jpg" alt="Gumball">
+                <img src="images/searchport.jpg" alt="">
                 <div class="content">
-                    <h2>Glee</h2>
+                    <h2>buscando...</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dicta amet nihil eligendi officiis doloribus placeat mollitia. Aperiam maiores esse delectus maxime fugiat dolorem explicabo, culpa pariatur impedit ullam saepe.</p>
                     <a href="#">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -62,9 +62,9 @@
                 </div>
             </div>
             <div class="slides">
-                <img src="img/img3.jpg" alt="Gumball">
+                <img src="images/devil.jpg" alt="EL mal a todas horas">
                 <div class="content">
-                    <h2>El amor es la meta</h2>
+                    <h2>El mal a todas horas</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dicta amet nihil eligendi officiis doloribus placeat mollitia. Aperiam maiores esse delectus maxime fugiat dolorem explicabo, culpa pariatur impedit ullam saepe.</p>
                     <a href="#">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -73,9 +73,9 @@
                 </div>
             </div>
             <div class="slides">
-                <img src="img/img4.jpg" alt="Gumball">
+                <img src="images/islaport.jpg" alt="La isla misteriosa">
                 <div class="content">
-                    <h2>Close Enough</h2>
+                    <h2>Close La isla misteriosa</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dicta amet nihil eligendi officiis doloribus placeat mollitia. Aperiam maiores esse delectus maxime fugiat dolorem explicabo, culpa pariatur impedit ullam saepe.</p>
                     <a href="#">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -84,9 +84,9 @@
                 </div>
             </div>
             <div class="slides">
-                <img src="img/img5.jpg" alt="Gumball">
+                <img src="images/getoutport.jpg" alt="getout">
                 <div class="content">
-                    <h2>Sabores de la Juventud</h2>
+                    <h2>Get out/h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dicta amet nihil eligendi officiis doloribus placeat mollitia. Aperiam maiores esse delectus maxime fugiat dolorem explicabo, culpa pariatur impedit ullam saepe.</p>
                     <a href="#">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="slides">
-                <img src="img/img6.jpg" alt="Gumball">
+                <img src="images/babyport.jpg" alt="Gumball">
                 <div class="content">
                     <h2>Demon Slayer</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dicta amet nihil eligendi officiis doloribus placeat mollitia. Aperiam maiores esse delectus maxime fugiat dolorem explicabo, culpa pariatur impedit ullam saepe.</p>
@@ -106,7 +106,7 @@
                 </div>
             </div>
             <div class="slides">
-                <img src="img/img7.jpg" alt="Gumball">
+                <img src="images/knivesport.jpg" alt="Gumball">
                 <div class="content">
                     <h2>Fuerza Trueno</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dicta amet nihil eligendi officiis doloribus placeat mollitia. Aperiam maiores esse delectus maxime fugiat dolorem explicabo, culpa pariatur impedit ullam saepe.</p>
@@ -130,16 +130,16 @@
         </div>
         <!-- fila de peliculas -->
         <div class="row">
-            <h2>Recomendados</h2>
+            <h2>películas buenas que tal vez no viste </h2>
             <div class="nav">
                 <div class="nav-bar">
-                    <div class="column active"><img src="img/img1.jpg" alt=""></div>
-                    <div class="column"><img src="img/img2.jpg" alt=""></div>
-                    <div class="column"><img src="img/img3.jpg" alt=""></div>
-                    <div class="column"><img src="img/img4.jpg" alt=""></div>
-                    <div class="column"><img src="img/img5.jpg" alt=""></div>
-                    <div class="column"><img src="img/img6.jpg" alt=""></div>
-                    <div class="column"><img src="img/img7.jpg" alt=""></div>
+                    <div class="column active"><img src="images/ojo.jpg" alt=""></div>
+                    <div class="column"><img src="images/searching.jpg" alt=""></div>
+                    <div class="column"><img src="images/devilport.jpg" alt=""></div>
+                    <div class="column"><img src="images/isla.jpg" alt=""></div>
+                    <div class="column"><img src="images/getout.jpg" alt=""></div>
+                    <div class="column"><img src="images/baby.jpg" alt=""></div>
+                    <div class="column"><img src="images/knives.jpg" alt=""></div>
                     <div class="column"><img src="img/img8.jpg" alt=""></div>
                 </div>
             </div>
@@ -188,12 +188,12 @@
     </script>
     <section>
         <div class="row">
-            <h2>Recomendados</h2>
+            <h2><a name="movie"></a>Películas</h2>
 		<div class="containers">
 		<!-- div*2>lorem20-->
 		<div>
 			
-			<a title="El hombre de hierro" href="https://www.youtube.com/watch?v=BddCj2i5pRw"><img src="rodes.jpg" style="width:100%" height="auto"/></a>
+			<a title="El hombre de hierro" href="https://www.youtube.com/watch?v=BddCj2i5pRw"><img src="rodes.jpg" style="width:100%" height="auto" /></a>
 			</a>
 		</div>
 		<div>
@@ -216,5 +216,70 @@
 		
 
 	</section>
+    <section>
+        <div class="row">
+            
+		<div class="containers">
+		<!-- div*2>lorem20-->
+		<div>
+			
+			<a title="El hombre de hierro" href="#"><img src="images/memento.jpg" style="width:100%" height="auto"/></a>
+			</a>
+		</div>
+		<div>
+			<a title="Insomnio" href="#"><img src="images/insomnia.jpg" style="width:100%" height="auto" /></a>
+			</a>
+		</div>
+		<div>
+			<a title="El hombre de acero" href="#"><img src="images/prestigio.jpg" style="width:100%" height="auto"/></a>
+			</a>
+		</div>
+		<div>
+			<a title="inception" href="#"><img src="images/inception.jpg" style="width:100%" height="auto"/></a>
+			</a>
+	    </div>
+		<div>
+			<a title="Dark Kight" href="#"><img src="images/Knight.jpg" style="width:100%" height="auto"/></a>
+			</a>
+	    </div>
+        
+    </div>
+    </div>
+   </section>
+   <section>
+    <div class="row">
+        <h2><a name="serie"></a> series</h2>
+        
+    <div class="containers">
+    <!-- div*2>lorem20-->
+    <div>
+        
+        <a title="chernobyl" href=""><img src="images/chernobyl.jpg" style="width:100%" height="auto"/></a>
+        </a>
+    </div>
+    <div>
+        <a title="dark" href=""><img src="images/dark.jpg" style="width:100%" height="auto" /></a>
+        </a>
+    </div>
+    <div>
+        <a title="Mr.robot" href=""><img src="images/robot.jpg" style="width:100%" height="auto"/></a>
+        </a>
+    </div>
+    <div>
+        <a title="GameOfThrones" href=""><img src="images/game.jpg" style="width:100%" height="auto"/></a>
+        </a>
+    </div>
+    <div>
+        <a title="The Mandalorian" href=""><img src="images/mandalor.jpg" style="width:100%" height="auto"/></a>
+        </a>
+        
+    </div>
+    
+    
+</div>
+</div>
+<div class="row">
+<h4>Proximamente mas contenido...</h4>
+</section>
 </body>
 </html>
